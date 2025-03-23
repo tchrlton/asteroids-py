@@ -53,7 +53,7 @@ def main():
         for bullet in shots:
           if bullet.has_collided(asteroid):
             bullet.kill()
-            asteroid.kill()
+            asteroid.split()
     
 
 if __name__ == "__main__":
